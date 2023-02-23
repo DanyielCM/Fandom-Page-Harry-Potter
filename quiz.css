@@ -1,0 +1,221 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background-image: url(images/background-beige.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    overflow-x: hidden;
+    color: #171211; 
+    font-family: 'Bellefair', serif;
+}
+
+::selection {
+    background: none;
+}
+
+/* Intro */
+
+h1 {
+    position: absolute;
+    overflow: hidden;
+    top: 9.8vw;
+    right: 26.8vw;
+    font-family: 'Bellefair', serif;
+    font-size: 4vw;
+    font-weight: 600;
+    line-height: 5.3vw;
+    width: 10vw; 
+    height: 5vw; 
+    cursor: pointer; 
+}
+
+h1:hover {
+    width: 25vw;
+    height: 11vw; 
+} 
+.title {
+    transition: width 2s ease 100ms, height 1s linear 2s;
+}
+
+.line-h1 {
+    position: absolute;
+    width: 45%;
+    height: 2vw;
+    top: 14vw;
+    right: 9vw;
+}
+
+
+h2 {
+    display: inline-block;
+    font-family: 'Bellefair', serif;
+    font-size: 2.1vw;
+    -webkit-text-stroke: 0.3px black;
+    cursor: pointer; 
+}
+
+.container-h2 {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 50.2vw;
+    top: 22.5vw;
+    right: 6.8vw;
+}
+
+/* Hovering effects and colors h2 */
+
+.title1 {
+    color: #Dc4e17;
+}
+
+.title2 {
+    color: #Fbd226;
+}
+
+.title3 {
+    color: #225189;
+}
+
+.title4 {
+    color: #29984d;
+}
+
+.title1:before {
+    content: "";
+    position: absolute;
+    width: 16%;
+    height: 0.2vw;
+    bottom: 0.6vw;
+    left: 0;
+    background-color: #Dc4e17;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+}
+.title1:hover:before {
+    visibility: visible;
+    transform: scaleX(1);
+  }
+
+.title2:before {
+    content: "";
+    position: absolute;
+    width: 16%;
+    height: 0.2vw;
+    bottom: 0.6vw;
+    left: 14.4vw;
+    background-color: #Fbd226;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+}
+.title2:hover:before {
+    visibility: visible;
+    transform: scaleX(1);
+  }
+
+.title3:before {
+    content: "";
+    position: absolute;
+    width: 16%;
+    height: 0.2vw;
+    bottom: 0.6vw;
+    left: 28.8vw;
+    background-color: #225189;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+}
+.title3:hover:before {
+    visibility: visible;
+    transform: scaleX(1);
+  }
+
+.title4:before {
+    content: "";
+    position: absolute;
+    width: 16%;
+    height: 0.2vw;
+    bottom: 0.6vw;
+    left: 43vw;
+    background-color: #29984d;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+}
+.title4:hover:before {
+    visibility: visible;
+    transform: scaleX(1);
+  }
+
+/* Images */
+
+.houses-mascots {
+    position: absolute;
+    top: -4.5vw;
+    left: 4vw;
+    width: 35vw;
+
+}
+
+.hat {
+    position: absolute;
+    top: 0.2vw;
+    right: -2vw;
+    width: 23vw;
+    z-index: 0;
+}
+
+.gallery {
+    position: absolute;
+    width: 60vw;
+    height: 20vw;
+    top: 25vw;
+    right: 0vw;
+}
+
+.card {
+    display: inline-block;
+    width: 12vw;
+    height: 18vw;
+    margin: 1vw;
+    cursor: pointer; 
+}
+
+.card:hover {
+    width: 14vw;
+    height: 20vw;
+    margin: 0;
+}
+
+/* Button */
+
+.button {
+    display: none;
+    position: relative;
+    top: 36vw;
+    left: -28vw;
+    text-align: center;
+    font-size: 1.6vw;
+    font-weight: 600;
+    background-color: #fff;
+    color: #2e2421;
+    width: fit-content;
+    margin: 1vw auto ;
+    padding: 2px 8px;
+    border: 2px solid #D6d4d2;
+    border-radius: 15%;
+}
+
+
+.button:active {
+    background-color: #ECE8DD;
+    }
+    
+.button:hover {
+    font-size: 1.7vw;
+    border-radius: 20%;
+}
+

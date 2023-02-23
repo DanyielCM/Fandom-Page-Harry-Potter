@@ -1,0 +1,153 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: url(images/background-beige.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    overflow: hidden;
+    color: #64482e; 
+    font-family: 'Quintessential';
+}
+::selection {
+    background: none;
+}
+
+.background-image {
+    position: absolute;
+    top: -0.5vw;
+    left: 30vw;
+    width: 41vw;
+    z-index: -1;
+}
+
+h1 {
+    position: absolute;
+    overflow: hidden;
+    top: 3.3vw;
+    left: 42vw;
+    font-family: 'MedievalSharp', serif;
+    font-size: 3vw;
+    font-weight: 600;
+    color: #E8d1a6;
+}
+
+/* Questions & Answers - design */
+
+.question, #result {
+    position: absolute;
+    top: 9.5vw;
+    left: 36.5vw;
+    width: 28vw;
+    height: 8.6vw;
+    text-align: center;
+    padding: 0.2vw; 
+    font-size: 1.8vw;
+    font-weight: 600;
+    text-decoration: 1px underline #64482e;
+}
+
+#result {
+    font-size: 2.2vw;
+}
+
+.question:hover {
+    color: #171211;
+}
+
+.answer {
+    background-image: url("images/back.jpg");
+    background-size: 100%;
+    position: relative;
+    top: 18.5vw;
+    left: 36.5vw;
+    width: 28.5vw;
+    height: 20vw;
+    border: 0.5vw double #E8d1a6;
+    border-radius: 1%;
+}
+
+.a1,.a2,.a3,.a4 {
+    background: linear-gradient( 0.10turn, #E8d1a6, #D4bf9a, #E8d1a6, #D4bf9a);
+    position: absolute;
+    width: 13vw;
+    height: 8.5vw;
+    text-align: center;
+    font-size: 1.4vw;
+    padding: 0.3vw 0.1vw 0.1vw;
+    border: 0.3vw double #E8d1a6;
+    border-radius: 5%;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.a1 {
+    top: 0.9vw;
+    left: 0.5vw;
+}
+
+
+.a2 {
+    top: 0.9vw;
+    right: 0.5vw;
+}
+
+.a3 {
+    top: 9.9vw;
+    left: 0.5vw;
+}
+
+.a4 {
+    top: 9.9vw;
+    right: 0.5vw;
+}
+
+.a1:hover, .a2:hover, .a3:hover, .a4:hover  {
+    font-size: 1.42vw;
+    text-decoration: underline 0.1vw;
+    width: 13.2vw;
+    height: 8.7vw;
+}
+
+.a1:active, .a2:active, .a3:active, .a4:active {
+    color: #171211;
+    border: 0.3vw double #64482e;
+}
+
+/* Design exceptions*/
+
+.small {
+    font-size: 1.14vw;
+}
+
+.small:hover {
+    font-size: 1.16vw;
+}
+
+.smaller {
+    font-size: 1vw;
+}
+
+.smaller:hover {
+    font-size: 1.02vw;
+}
+
+
+/*  */
+
+#q2, #q3, #q4, #q5, #q6, #q7, #q8 {
+    display: none; 
+}
+
+#house-logo {
+    display: none;
+    position: absolute;
+    top: 19vw;
+    left: 42.5vw;
+    width: 17vw;
+    height: 17vw;
+    text-align: center;
+    z-index: 5;
+    border-radius: 50%;
+}

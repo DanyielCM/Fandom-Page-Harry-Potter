@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Sorting Hat Quiz</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <!-- Bootstrap CSS and JS -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <!-- Google Fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bellefair&family=Charm&family=MedievalSharp&family=Merriweather&family=Merriweather+Sans&family=Montserrat&family=Quintessential&display=swap" rel="stylesheet">
+   
+    <!-- Icons -->
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- Favicon -->
+
+    <link rel="icon" href="images/favicon-logo.ico" />
+
+    <!-- CCS Link -->
+
+    <link rel='stylesheet' type='text/css' href='questions.css'>
+
+</head>
+<body>
+    <audio id="audio" autoplay>
+        <source src="audio.mp3" type="audio/mpeg">
+        <source src="audio.wav" type="audio/ogg">
+    </audio>
+    <input id="answers" type="hidden" value="">
+    <img class="background-image" src="images/scroll.png">
+    <h1>~ Question 1 ~</h1>
+    <div id="q1">
+        <div class="question">
+            Moon or stars?
+        </div>
+        <div class="answer">
+            <div class="a1" data-index-number="1,3" onclick="question(1)">Moon</div>
+            <div class="a2" data-index-number="2,4" onclick="question(1)">Stars</div>
+        </div>
+    </div>
+
+     <div id="q2"> 
+        <div class="question">
+            How would you like to be known to history?
+        </div>
+        <div class="answer">
+            <div class="a1" data-index-number="1" onclick="question(2)">The Bold</div>
+            <div class="a2" data-index-number="2" onclick="question(2)">The Good</div>
+            <div class="a3" data-index-number="3" onclick="question(2)">The Wise</div>
+            <div class="a4" data-index-number="4" onclick="question(2)">The Great</div>
+        </div>
+    </div>
+
+    <div id="q3"> 
+        <div class="question">
+            Four goblets are placed before you. Which would you choose to drink?
+        </div>
+        <div class="answer">
+            <div class="a1  small" data-index-number="1" onclick="question(3)">The golden liquid so bright that it hurts the eye, and which makes sunspots dance all around the room</div>
+            <div class="a2  small" data-index-number="2" onclick="question(3)">The smooth, thick, richly purple drink that gives off a delicious smell of chocolate and plums</div>
+            <div class="a3  small" data-index-number="3" onclick="question(3)">The foaming, frothing, silvery liquid that sparkles as though containing ground diamonds</div>
+            <div class="a4  small" data-index-number="4" onclick="question(3)">The mysterious black liquid that gleams like ink, and gives off fumes that make you see strange visions</div>
+        </div>
+    </div>
+
+    <div id="q4"> 
+        <div class="question">
+            You enter an enchanted garden. What would you be most curious to examine first?
+        </div>
+        <div class="answer">
+            <div class="a1  small" data-index-number="1" onclick="question(4)">The statue of an old wizard with a strangely twinkling eye</div>
+            <div class="a2  small" data-index-number="2" onclick="question(4)">The fat red toadstools that appear to be talking to each other</div>
+            <div class="a3  small" data-index-number="3" onclick="question(4)">The silver leafed tree bearing golden apples</div>
+            <div class="a4  small" data-index-number="4" onclick="question(4)">The bubbling pool, in the depths of which something luminous is swirling</div>
+        </div>
+    </div>
+
+    <div id="q5"> 
+        <div class="question">
+            If you could have any power, which would you choose?
+        </div>
+        <div class="answer">
+            <div class="a1" data-index-number="1" onclick="question(5)">The power of invisibility</div>
+            <div class="a2" data-index-number="2" onclick="question(5)">The power of superhuman strength</div>
+            <div class="a3" data-index-number="3" onclick="question(5)">The power to change your appearance at will</div>
+            <div class="a4" data-index-number="4" onclick="question(5)">The power to change the past</div>
+        </div>
+    </div>
+
+    <div id="q6"> 
+        <div class="question">
+            Which nightmare would frighten you most?
+        </div>
+        <div class="answer">
+            <div class="a1 small" data-index-number="1" onclick="question(6)">An eye at the keyhole of the dark, windowless room in which you are locked.</div>
+            <div class="a2 small" data-index-number="2" onclick="question(6)">Waking up to find that neither your friends nor your family have any idea who you are.</div>
+            <div class="a3 smaller" data-index-number="3" onclick="question(6)">Standing on top of something very high and realizing suddenly that there are no hand- or footholds, nor any barrier to stop you falling.</div>
+            <div class="a4 smaller" data-index-number="4" onclick="question(6)">Being forced to speak in such a silly voice that hardly anyone can understand you, and everyone laughs at you.</div>
+        </div>
+    </div>
+
+    <div id="q7"> 
+        <div class="question">
+            If you were attending Hogwarts, which pet would you choose to take with you?
+        </div>
+        <div class="answer">
+            <div class="a1" data-index-number="1" onclick="question(7)">Dragon toad</div>
+            <div class="a2" data-index-number="2" onclick="question(7)">Common toad</div>
+            <div class="a3" data-index-number="3" onclick="question(7)">Barn owl</div>
+            <div class="a4" data-index-number="4" onclick="question(7)">Siamese cat</div>
+        </div>
+    </div>
+
+    <div id="q8"> 
+        <div class="question">
+            Black or White?
+        </div>
+        <div class="answer">
+            <div class="a1" data-index-number="1,4"  onclick="question(8)">Black</div>
+            <div class="a2" data-index-number="2,3"  onclick="question(8)">White</div>
+        </div>
+    </div>
+    <div>
+        <div id="result">
+        </div>
+        <img id="house-logo" src="images/gryffindor.png">
+    </img>
+    <script src='script.js'></script>
+</body>
+</html>

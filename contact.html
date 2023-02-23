@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+
+    <!-- Bootstrap CSS and JS -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <!-- Google Fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bellefair&family=Merriweather&family=Merriweather+Sans&family=Montserrat&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- Favicon -->
+
+    <link rel="icon" href="images/favicon-logo.ico" />
+
+    <!-- CSS Link -->
+
+    <link rel="stylesheet" type="text/css" href="contact.css" />
+</head>
+<body>
+    <img class="content owl" src="images/owl.png">
+    <img class="content owl-post" src="images/owl-post.png">
+    <img class="content train" src="images/train.trans.png">
+    <img class="content good" src="images/no-good.png">
+    <img class="content snitch" src="images/snitch.png">
+    <h1>Survey Form</h1>
+    <h2>Thank you for taking the time to help us improve the platform!</h2>
+    <form id="survey-form" action="https://">
+        <fieldset>
+            <label id="name-label">
+                <div class="intro"> Name </div>
+                <input id="name" type="text" placeholder="Type your name" required />
+            </label>
+            <label id="email-label">
+                <div class="intro"> Email </div>
+                <input id="email" type="email" placeholder="Type your email" required />
+            </label>
+            <label id="number-label">
+                <div class="intro"> Age(optional) </div>
+                <input id="number" type="number" min="5" max="120" placeholder="Type your age" />
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <div class="question">Would you recommend <span class="name"> Harry Potter </span> to a friend?</div>
+                <label>
+                    <input type="radio" class="inline" value="1" name="recommandation" checked />   Definitely
+                </label>
+                <label>
+                    <input type="radio" class="inline" value="2" name="recommandation" />   Maybe
+                </label>
+                <label>
+                    <input type="radio" class="inline" value="3" name="recommandation" />   Not sure
+                </label>
+
+            <div class="question">What is your favorite book of <span class="name"> Harry Potter</span>?</div>
+                <label>
+                    <input type="checkbox" class="inline" name="product" value="1" checked/>   Harry Potter and the Philosopher's Stone 
+                </label>
+                <label>
+                    <input type="checkbox" class="inline" name="product" value="2" />   Harry Potter and the Chamber of Secrets
+                </label>
+                <label>
+                    <input type="checkbox" class="inline" name="product" value="3" />   Harry Potter and the Prisoner of Azkaban
+                </label>
+                <label>
+                    <input type="checkbox" class="inline" name="product" value="4" />   Harry Potter and the Goblet of Fire
+                </label>
+                <label>
+                    <input type="checkbox" class="inline" name="product" value="5" />   Harry Potter and the Order of the Phoenix
+                </label>
+                <label>
+                    <input type="checkbox" class="inline" name="product" value="6" />   Harry Potter and the Half-Blood Prince
+                </label>
+                <label>
+                    <input type="checkbox" class="inline" name="product" value="7" />   Harry Potter and the Deathly Hallows
+                </label>
+                <label>
+                    <input type="checkbox" class="inline" name="product" value="all" />   All of them
+                </label>
+
+            <div class="question">How you rate our fan page?</div>
+                <label>
+                    <select id="dropdown" required>
+                        <option disabled selected value>(select)</option>
+                        <option value="5">5</option>
+                        <option value="4">4</option>
+                        <option value="3">3</option>
+                        <option value="2">2</option>
+                        <option value="1">1</option>
+                    </select>
+                </label>
+
+            <div class="question">Any comments or suggestions?</div>
+            <label>
+                <textarea name="com" rows="4" cols="30" placeholder="Enter your comment here..."></textarea>
+            </label>
+        </fieldset>
+        <input id="submit" type="submit" value="Submit" />
+    </form>
+    <div class="map-title">Our headquarters</div>
+    <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2473.3405582573664!2d-0.42003458403464633!3d51.69021270514069!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487641c449012c0f%3A0xf7b3848d5db133ca!2sHarry%20Potter%20Studio%20Tour!5e0!3m2!1sro!2sro!4v1674751836022!5m2!1sro!2sro" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</body>
+</html>

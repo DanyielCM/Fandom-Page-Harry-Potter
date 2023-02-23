@@ -1,0 +1,327 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+    overflow-x: hidden;
+    color: #2e2421; 
+    font-family: 'Bellefair', serif;
+}
+
+::selection {
+    background: none;
+}
+
+.background {
+    background-color: #ECE8DD;
+    width: 100%;
+    height: 50vw;
+    padding-bottom: 5vw ;
+    border: 2vw solid #D6d4d2;
+    
+}
+
+hr {
+    border: 1vw solid black;
+    margin: 0;
+}
+ 
+.video {
+    position: absolute;
+    z-index: 3;
+    width: 35vw;
+    height: 22vw;
+    border: 2px solid #D6d4d2;
+}
+
+.content {
+    position: absolute;
+    z-index: 2;
+}
+
+.images {
+    border: 4px solid #D6d4d2;
+    border-radius: 2px;
+}
+
+.book {
+    margin-left: 2.5vw;
+    margin-top: 2.5vw;
+    width: 20vw;
+}
+
+.title {
+    margin-left: 23.5vw;
+    margin-top: 2.2vw;
+    width: 20vw;
+    font-size: 1.6vw;
+    font-family: 'Merriweather';
+    line-height: 2vw;
+}
+
+.summary{
+    margin-left: 23.5vw;
+    margin-top: 6.5vw;
+    width: 24vw;
+    font-size: 1.2vw;
+}
+
+/* First */
+  
+.owl {
+    right: 0vw;
+    margin-top: -4vw;
+    width: 25vw;
+    z-index: 4
+}
+
+.img1-1 {
+    right: 28vw;
+    margin-top: 6vw;
+    width: 21vw;
+}
+
+.img1-2 {
+    right: 5vw;
+    margin-top: 12vw;
+    width: 21vw;
+}
+
+.img1-3 {
+    right: 38vw;
+    margin-top: 32vw;
+    width: 15vw;
+    border-top: 2px solid #D6d4d2;
+    border-right: 2px solid #D6d4d2;
+}
+
+.img1-4 {
+    left: 26vw;
+    margin-top: 27vw;
+    width: 18vw;
+}
+
+/* Second */
+
+.snake {
+    left: 10vw;
+    margin-top: 30vw;
+    width: 19vw;
+    z-index: 3;
+}
+
+.car {
+    right: 0.5vw;
+    margin-top: 9vw;
+    width: 13vw;
+    z-index: 3;
+}
+
+.img2-1 {
+    right: 27vw;
+    margin-top: 3vw;
+    width: 20vw;
+}
+
+.img2-2 {
+    right: 10vw;
+    margin-top: 17vw;
+    width: 20vw;
+    border-top: 2px solid #D6d4d2;
+    border-left: 2px solid #D6d4d2;
+}
+
+.img2-3 {
+    right: 32vw;
+    margin-top: 30vw;
+    width: 17vw;
+}
+
+.img2-4 {
+    right: 6vw;
+    margin-top: -1vw;
+    width: 15vw;
+}
+
+/* Third */
+
+.wolf {
+    left: 0.8vw;
+    margin-top: 32vw;
+    width: 24.5vw;
+    z-index: 3;
+}
+
+.img3-1 {
+    right: 8vw;
+    margin-top: 17vw;
+    width: 20vw;
+    z-index: 3;
+    border-top: 2px solid #D6d4d2;
+    border-left: 2px solid #D6d4d2;
+}
+
+.img3-2 {
+    right: 25vw;
+    margin-top: 3vw;
+    width: 20vw;
+}
+
+.img3-3 {
+    right: 32vw;
+    margin-top: 26vw;
+    width: 17vw;
+}
+
+.img3-4 {
+    right: 5vw;
+    margin-top: -1vw;
+    width: 15vw;
+}
+
+/* Fourth */
+
+.cup {
+    right: 18vw;
+    margin-top: 14vw;
+    width: 16vw;
+    z-index: 3;
+}
+
+.img4-1 {
+    right: 14vw;
+    margin-top: -1.5vw;
+    width: 20vw;
+    z-index: 3;
+    border-bottom: 2px solid #D6d4d2;
+    border-left: 2px solid #D6d4d2;
+}
+
+.img4-2 {
+    right: 32vw;
+    margin-top: 4vw;
+    width: 16vw;
+}
+
+.img4-3 {
+    right: 22vw;
+    margin-top: 29.5vw;
+    width: 22vw;
+}
+
+.img4-4 {
+    right: 4vw;
+    margin-top: 19vw;
+    width: 16vw;
+}
+
+/* Fifth */
+
+.phoenix {
+    left: 27vw;
+    margin-top: 20vw;
+    width: 22vw;
+    z-index: 3;
+}
+
+.img5-1 {
+    right: 5vw;
+    margin-top: 10vw;
+    width: 21vw;
+}
+
+.img5-2 {
+    right: 16vw;
+    margin-top: -1vw;
+    width: 21vw;
+    border-bottom: 2px solid #D6d4d2;
+    border-right: 2px solid #D6d4d2;
+}
+
+.img5-3 {
+    right: 30vw;
+    margin-top: 12vw;
+    width: 17vw;
+    border-top: 2px solid #D6d4d2;
+    border-right: 2px solid #D6d4d2;
+}
+
+/* Sixth */
+
+.wand {
+    right: 11vw;
+    margin-top: 38vw;
+    width: 22vw;
+    z-index: 3;
+}
+
+.snitch {
+    right: 13vw;
+    margin-top: 1vw;
+    width: 15vw;
+    z-index: 3;
+}
+
+.img6-1 {
+    right: 1vw;
+    margin-top: -1vw;
+    width: 12vw;
+    z-index: 3;
+}
+
+.img6-2 {
+    right: 42vw;
+    margin-top: 25vw;
+    width: 19vw;
+}
+
+.img6-3 {
+    right: 28vw;
+    margin-top: -1vw;
+    width: 16vw;
+}
+
+.img6-4 {
+    right: 6vw;
+    margin-top: 11vw;
+    width: 24vw;
+}
+
+/* Seventh */
+
+.always {
+    left: 8.5vw;
+    margin-top: 32vw;
+    width: 11.5vw;
+
+}
+
+.img7-1 {
+    right: 11vw;
+    margin-top: -1vw;
+    width: 35vw;
+    z-index: 3;
+}
+
+.img7-2 {
+    right: 4vw;
+    margin-top: 13vw;
+    width: 34vw;
+    z-index: 3;
+    border-top: 2px solid #D6d4d2;
+    border-left: 2px solid #D6d4d2;
+}
+
+.img7-3 {
+    right: 24vw;
+    margin-top: 30vw;
+    width: 26vw;
+    z-index: 4;
+    border-top: 2px solid #D6d4d2;
+    border-right: 2px solid #D6d4d2;
+}
+
+.img7-4 {
+    left: 29vw;
+    margin-top: 31vw;
+    width: 16vw;
+}
